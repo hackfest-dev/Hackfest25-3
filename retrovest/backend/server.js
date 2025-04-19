@@ -127,7 +127,7 @@ const prices = lines.map(line => {
   return { date, basePrice: parseFloat(close) };
 });
 
-const STARTING_CASH = 50000;
+const STARTING_CASH = 25000;
 const MAX_LEVERAGE = 2.0;
 const MAINTENANCE_RATIO = 0.25;
 const FEE_RATE = 0.002;
@@ -250,4 +250,6 @@ app.get('/api/challenge/prices', (req, res) => {
   res.json(prices);
 });
 
-app.listen(5001, () => console.log('✅ Game server running on http://localhost:5001'));
+
+const PORT = process.env.PORT || 5001;
+app.listen(PORT, () => console.log(`✅ Merged server running on http://localhost:${PORT}`));
