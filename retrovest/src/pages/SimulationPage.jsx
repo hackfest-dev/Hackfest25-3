@@ -78,24 +78,7 @@ function SimulationPage() {
           ))}
         </div>
 
-        <div className="simulation-info">
-          <div className="info-block">
-            <h3>📅 Date:</h3>
-            <p>{currentStep.date}</p>
-          </div>
-          <div className="info-block">
-            <h3>💼 Portfolio Value:</h3>
-            <p>${currentStep.portfolioValue.toLocaleString()}</p>
-          </div>
-          <div className="info-block">
-            <h3>📈 Holdings:</h3>
-            <ul>
-              {Object.entries(currentStep.holdings).map(([ticker, qty]) => (
-                <li key={ticker}>{ticker}: {qty} shares</li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        
 
         <div className="news-section">
           <h3>📰 Market News:</h3>
