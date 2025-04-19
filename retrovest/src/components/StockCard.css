@@ -6,6 +6,7 @@
     background-color: #111;
     color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-family: 'Courier New', Courier, monospace;
   }
   .stock-card h3 {
     margin-bottom: 10px;

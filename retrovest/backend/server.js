@@ -27,9 +27,7 @@ financeApp.get('/api/quote', async (req, res) => {
   }
 });
 
-financeApp.listen(5000, () => console.log('✅ Yahoo Finance API running on http://localhost:5000'));
 
-// Other game and analysis logic (port 5001)
 const app = express();
 app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 app.use(express.json());
