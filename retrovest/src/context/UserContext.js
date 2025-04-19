@@ -6,7 +6,6 @@ export const UserContext = createContext();
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
-  // Check session on mount
   useEffect(() => {
     const checkSession = async () => {
       try {

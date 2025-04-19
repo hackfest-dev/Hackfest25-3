@@ -1,4 +1,3 @@
-// src/components/MarketAnalysis.jsx
 import React, { useEffect, useState } from 'react';
 import { FaArrowUp, FaArrowDown } from 'react-icons/fa';
 import './MarketAnalysis.css';

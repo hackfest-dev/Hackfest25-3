@@ -68,9 +68,7 @@ function SimulationPage() {
   return (
     <div className="simulation-wrapper">
       <div className="simulation-container">
-        {/* Timeline */}
         <div className="timeline">
-          {/* Only color full line when all steps completed */}
           {step === lastIndex && <div className="timeline-bar-complete" />}
           {steps.map((s, idx) => (
             <div key={idx} className={`timeline-item ${idx <= step ? 'active' : ''}`}>
@@ -80,27 +78,8 @@ function SimulationPage() {
           ))}
         </div>
 
-        {/* Simulation Info */}
-        <div className="simulation-info">
-          <div className="info-block">
-            <h3>📅 Date:</h3>
-            <p>{currentStep.date}</p>
-          </div>
-          <div className="info-block">
-            <h3>💼 Portfolio Value:</h3>
-            <p>${currentStep.portfolioValue.toLocaleString()}</p>
-          </div>
-          <div className="info-block">
-            <h3>📈 Holdings:</h3>
-            <ul>
-              {Object.entries(currentStep.holdings).map(([ticker, qty]) => (
-                <li key={ticker}>{ticker}: {qty} shares</li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        
 
-        {/* News Section */}
         <div className="news-section">
           <h3>📰 Market News:</h3>
           <ul>
@@ -110,7 +89,6 @@ function SimulationPage() {
           </ul>
         </div>
 
-        {/* Decision Panel */}
         <div className="decision-panel">
           <h3>📊 Your Decision:</h3>
           <div className="decision-buttons">
@@ -127,7 +105,6 @@ function SimulationPage() {
           </div>
         </div>
 
-        {/* Feedback Popup */}
         {feedback && (
           <div className="feedback-popup">
             {feedback}<br />

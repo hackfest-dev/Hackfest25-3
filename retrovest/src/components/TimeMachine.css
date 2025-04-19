@@ -1,10 +1,9 @@
-/* src/components/TimeMachine.css */
 
 .time-machine {
   background-color: #111;
   color: #f0f0f0;
   padding: 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   min-height: 100vh;
 }
 
@@ -127,19 +126,19 @@ p {
 }
 
 .history-card.growing {
-  background-color: #144d3f; /* deep greenish teal */
+  background-color: #144d3f; 
   border-radius: 10px;
   padding: 10px;
 }
 
 .history-card.declining {
-  background-color: #4d1f1f; /* deep muted red */
+  background-color: #4d1f1f; 
   border-radius: 10px;
   padding: 10px;
 }
 
 .history-card.stable {
-  background-color: #2a2a2a; /* neutral dark gray */
+  background-color: #2a2a2a; 
   border-radius: 10px;
   padding: 10px;
 }

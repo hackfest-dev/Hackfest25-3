@@ -1,4 +1,3 @@
-// src/components/TimeMachine.jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import StockCard from './StockCard';

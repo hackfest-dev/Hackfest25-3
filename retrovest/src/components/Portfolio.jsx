@@ -1,10 +1,8 @@
-// frontend/src/components/Portfolio.jsx
 
 import React from 'react';
 import './Portfolio.css';
 
 export default function Portfolio({ data }) {
-  // Compute aggregates
   const totalQty      = data.reduce((sum, item) => sum + item.quantity, 0);
   const totalInvested = data.reduce((sum, item) => sum + item.avgPrice * item.quantity, 0);
   const totalPL       = data.reduce((sum, item) => {
@@ -12,7 +10,6 @@ export default function Portfolio({ data }) {
     return sum + (isNaN(plNum) ? 0 : plNum);
   }, 0);
 
-  // pick a color: green for profit, red for loss, white for zero
   const plColor = totalPL > 0
     ? 'lightgreen'
     : totalPL < 0

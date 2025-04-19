@@ -1,4 +1,3 @@
-// frontend/src/components/SearchBar.jsx
 
 import React, { useState } from 'react';
 import axios from 'axios';
