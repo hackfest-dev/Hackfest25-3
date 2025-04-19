@@ -1,4 +1,3 @@
-// src/components/RiskProfiler.jsx
 import React, { useState } from 'react';
 import './RiskProfiler.css';
 

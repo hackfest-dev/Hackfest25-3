@@ -15,7 +15,6 @@ function SummaryPage() {
       const data = await response.json();
       const newScenario = JSON.parse(data.scenario);
 
-      // You would update this based on how your app stores scenarios (context/global state recommended)
       console.log('Generated Scenario:', newScenario);
 
       navigate('/');
