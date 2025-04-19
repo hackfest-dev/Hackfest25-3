@@ -78,8 +78,10 @@ retrovest/
 4. **Summary:** Review performance metrics and badges.
 
 ## 📸 Screenshots
-![Time Machine Mode](./assets/time-machine.png)
-![Paper Trading](./assets/paper-trading.png)
+![image](https://github.com/user-attachments/assets/dea27398-98dd-4a0e-99fd-0b25a55821cb)
+![image](https://github.com/user-attachments/assets/bf04a33f-94ca-41b5-9c38-c58e2795c633) ![image](https://github.com/user-attachments/assets/6f134924-6b0d-458d-844b-ad6ba0ecf82e)
+
+
 
 ## 🤝 Contribution
 We welcome contributions:
