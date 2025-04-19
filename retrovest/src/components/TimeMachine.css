@@ -1,0 +1,161 @@
+/* src/components/TimeMachine.css */
+
+.time-machine {
+  background-color: #111;
+  color: #f0f0f0;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.time-machine h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #00ffcc;
+}
+
+.year-select {
+  margin-bottom: 2rem;
+}
+
+.year-select select,
+.year-select button {
+  padding: 0.6rem 1rem;
+  margin-left: 0.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.year-select button {
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.year-select button:hover {
+  background-color: #00ddb8;
+}
+
+.stock-phase {
+  margin-top: 1.5rem;
+}
+
+.stock-phase h2 {
+  color: #00ffcc;
+  margin-bottom: 1rem;
+}
+
+.action-buttons {
+  margin-top: 1.2rem;
+}
+
+.action-buttons button {
+  background-color: #00ffcc;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  margin-right: 1rem;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.action-buttons button:hover {
+  background-color: #00ddb8;
+}
+
+.next-button {
+  margin-top: 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+.history-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fundamental-labels {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.fundamental-labels .revenue {
+  font-weight: bold;
+  color: #00ccff;
+}
+
+.fundamental-labels .profit {
+  font-weight: bold;
+  color: #ffc107;
+}
+
+.history-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.history-card {
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+  min-width: 240px;
+  max-width: 280px;
+  flex: 1;
+  background-color: #1a1a1a;
+  transition: background-color 0.3s ease;
+}
+
+.history-card.growing {
+  background-color: #144d3f; /* deep greenish teal */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.history-card.declining {
+  background-color: #4d1f1f; /* deep muted red */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.history-card.stable {
+  background-color: #2a2a2a; /* neutral dark gray */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.fundamental-labels {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.fundamental-labels .revenue {
+  font-weight: bold;
+  color: #00ccff;
+}
+
+.fundamental-labels .profit {
+  font-weight: bold;
+  color: #ffc107;
+}
+

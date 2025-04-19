@@ -1,0 +1,42 @@
+.scenario-card {
+    background-color: #111;
+    border: 2px solid #00ffcc;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    box-shadow: 0 0 8px #00ffcc44;
+    transition: transform 0.3s ease;
+  }
+  
+  .scenario-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 16px #00ffccaa;
+  }
+  
+  .scenario-card .years {
+    color: #ccc;
+    font-style: italic;
+    margin: 5px 0;
+  }
+  
+  .scenario-card .description {
+    margin: 10px 0 20px 0;
+  }
+  
+  .scenario-card button {
+    padding: 10px 20px;
+    background-color: #00ffcc;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .scenario-card button:hover {
+    background-color: #00ddaa;
+  }
+  

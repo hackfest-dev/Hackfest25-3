@@ -1,0 +1,16 @@
+.scenario-select {
+  padding: 40px;
+  text-align: center;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #000; /* Optional, for full retro feel */
+  height:100vh;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}

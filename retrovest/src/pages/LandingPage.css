@@ -1,0 +1,235 @@
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 60px); /* subtract navbar height */
+  background: radial-gradient(circle at top, #1f1f1f, #000);
+  color: white;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Hero */
+.landing-hero h1 {
+  font-size: 3rem;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.landing-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing-hero button {
+  padding: 12px 24px;
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.landing-hero button:hover {
+  background-color: #00ddaa;
+}
+
+/* ↓↓ SIP Calculator CTA ↓↓ */
+.sip-cta {
+  margin: 4rem auto;
+  padding: 2rem 1rem;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #00ffcc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.sip-cta h2 {
+  font-size: 1.8rem;
+  color: #00ffcc;
+  margin-bottom: 0.5rem;
+}
+
+.sip-cta p {
+  color: #ddd;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.sip-btn {
+  padding: 12px 24px;
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sip-btn:hover {
+  background-color: #00ddaa;
+}
+/* src/pages/LandingPage.css */
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* allow page to grow */
+  min-height: calc(100vh - 60px);
+  background: radial-gradient(circle at top, #1f1f1f, #000);
+  color: white;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* existing hero styles… */
+
+.landing-hero h1 {
+  font-size: 3rem;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.landing-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing-hero button {
+  padding: 12px 24px;
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.landing-hero button:hover {
+  background-color: #00ddaa;
+}
+
+/* — new SIP section — */
+.landing-sip-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  max-width: 600px;
+  background: rgba(0, 255, 204, 0.05);
+  border-radius: 8px;
+}
+
+.landing-sip-section h2 {
+  font-size: 1.75rem;
+  color: #00ffcc;
+  margin-bottom: 0.5rem;
+}
+
+.landing-sip-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #ddd;
+}
+
+.sip-btn {
+  padding: 12px 28px;
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sip-btn:hover {
+  background-color: #00ddaa;
+}
+.landing-side-by-side {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.sip-block,
+.education-block {
+  background-color: #0f0f0f;
+  border: 2px solid #00ffcc;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  flex: 1;
+  text-align: center;
+}
+
+.sip-block h2,
+.education-block h2 {
+  font-size: 1.6rem;
+  color: #00ffcc;
+  margin-bottom: 1rem;
+}
+
+.sip-block p,
+.education-block p {
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+}
+
+.sip-btn,
+.education-btn {
+  background-color: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sip-btn:hover,
+.education-btn:hover {
+  background-color: #00e6b8;
+}
+.landing-side-by-side {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* stretch them to equal height */
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.sip-block,
+.education-block {
+  background-color: #0f0f0f;
+  border: 2px solid #00ffcc;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  flex: 1 1 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

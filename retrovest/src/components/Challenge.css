@@ -1,0 +1,65 @@
+/* reuse your paper-trading dark theme */
+body {
+    background: #121212;
+    color: #eee;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* container & animations */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    animation: fadeInUp 0.5s ease-out;
+  }
+  
+  button {
+    padding: 8px 12px;
+    background: #20b2ff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Inputs */
+  input[type="number"] {
+    padding: 6px;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    color: #fff;
+    width: 80px;
+    margin-right: 10px;
+  }
+  
+  /* Slider */
+  input[type="range"] {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* News log */
+  .news-list {
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    list-style: none;
+  }
+  .news-list li {
+    padding: 6px;
+    border-bottom: 1px solid #333;
+  }
+  .news-list li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Keyframes */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  

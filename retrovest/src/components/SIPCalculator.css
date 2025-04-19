@@ -1,0 +1,87 @@
+.sip-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* ─── Tabs (no sliding‐pill) ─── */
+.tabs {
+  display: inline-flex;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  color: #374151;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tabs button.active {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.tabs button:not(.active):hover {
+  background: rgba(0,0,0,0.05);
+}
+
+/* ─── Controls ─── */
+.sip-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.control label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+.control .value {
+  margin-top: 0.5rem;
+  color: #2ecc71;
+  font-weight: 600;
+}
+
+/* ─── Results & Chart ─── */
+.sip-results {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.sip-results .numbers {
+  flex: 1;
+}
+.sip-results .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.sip-results .row.total {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.sip-results hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 1rem 0;
+}
+.sip-results .row.difference strong {
+  color: #e74c3c;
+}
+
+/* keep chart container sized correctly */
+.chart {
+  width: 200px;
+  height: 200px;
+}

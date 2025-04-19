@@ -1,0 +1,73 @@
+.about-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #312929;
+    border-radius: 20px;
+    color: antiquewhite;
+  }
+  
+  .about-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fffafa;
+  }
+  
+  .about-container p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+  }
+  
+  .about-container h2 {
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: #2ecc71;
+  }
+  
+  .developer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .dev-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1rem;
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .dev-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .dev-card img {
+    width: 100%;
+    border-radius: 50%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 0.75rem;
+  }
+  
+  .dev-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .dev-card a {
+    color: #0077b5;
+    transition: color 0.2s;
+  }
+  
+  .dev-card a:hover {
+    color: #004182;
+  }

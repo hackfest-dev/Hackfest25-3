@@ -1,0 +1,57 @@
+.simulation-container {
+    padding: 2rem;
+    background-color: #0a0a0a;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .sim-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sim-years {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+  }
+  
+  .sim-description {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+  }
+  
+  .sim-data {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .placeholder-box {
+    background: #1c1c1c;
+    padding: 2rem;
+    border: 1px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #888;
+  }
+  
+  .continue-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #00bfa6;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .continue-btn:hover {
+    background-color: #00e8c3;
+  }
+  
