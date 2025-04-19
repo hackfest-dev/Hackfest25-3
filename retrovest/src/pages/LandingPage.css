@@ -222,6 +222,7 @@
 
 .sip-block,
 .education-block {
+  height:15rem;
   background-color: #0f0f0f;
   border: 2px solid #00ffcc;
   padding: 2rem;

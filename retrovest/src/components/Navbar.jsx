@@ -47,14 +47,12 @@ const Navbar = () => {
         <Link to="/">🌀 RetroVest</Link>
       </div>
       <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/time-machine">Time Machine</Link></li>
-        <li><Link to="/time-machine-2">Time Machine 2</Link></li>
+        
+        <li><Link to="/Tmm">Time Machine Mode</Link></li>
         <li><Link to="/challenge">Challenge Mode</Link></li>
         <li><Link to="/market-analysis">Market Analysis</Link></li>
-        <li><Link to="/sip-calculator">SIP Calculator</Link></li>
         <li><Link to="/education">Education</Link></li>
-        <li><Link to="/about">About</Link></li>
+        
 
         {user ? (
           <li className="user-dropdown" ref={dropdownRef}>

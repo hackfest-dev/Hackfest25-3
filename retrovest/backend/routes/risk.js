@@ -1,22 +1,44 @@
-// routes/risk.js
 const express = require('express');
-const router = express.Router();
-const { getRiskAnalysis } = require('../gemini');
+const cors = require('cors');
+const yahooFinance = require('yahoo-finance2').default;
+const riskRoutes = require('./routes/risk');
+require('dotenv').config();
 
-router.post('/analyze', async (req, res) => {
-  const questionAnswers = req.body.answers;
+const app = express();
 
-  if (!Array.isArray(questionAnswers)) {
-    return res.status(400).json({ error: 'Invalid input format' });
+// Middleware
+app.use(cors({
+  origin: 'http://localhost:3000',
+  credentials: true
+}));
+app.use(express.json()); // Needed to parse JSON bodies
+
+// Routes
+app.use('/api/risk', riskRoutes); // Gemini risk analysis route
+
+app.get('/api/quote', async (req, res) => {
+  const symbols = req.query.symbols;
+  if (!symbols) {
+    return res.status(400).json({ error: 'Missing symbols query parameter.' });
   }
 
+  const symbolArray = symbols.split(',');
   try {
-    const result = await getRiskAnalysis(questionAnswers);
-    res.json({ analysis: result });
+    const result = await yahooFinance.quote(symbolArray);
+    res.json({ quoteResponse: { result } });
   } catch (error) {
-    console.error('Gemini error:', error);
-    res.status(500).json({ error: 'Gemini API call failed' });
+    console.error('Error fetching data from yahoo-finance2:', error);
+    res.status(500).json({ error: 'Failed to fetch data from Yahoo Finance.' });
   }
 });
 
-module.exports = router;
+// Start server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
+});
+
+
+
+
+// YOU FUCKED UP CORRECT IT
