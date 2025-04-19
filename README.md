@@ -80,8 +80,10 @@ retrovest/
 ## 📸 Screenshots
 ![image](https://github.com/user-attachments/assets/dea27398-98dd-4a0e-99fd-0b25a55821cb)
 ![image](https://github.com/user-attachments/assets/bf04a33f-94ca-41b5-9c38-c58e2795c633) ![image](https://github.com/user-attachments/assets/6f134924-6b0d-458d-844b-ad6ba0ecf82e)
+![image](https://github.com/user-attachments/assets/1bfda78b-fdb8-47c0-a5f4-91f7b1c01ee0)
+![image](https://github.com/user-attachments/assets/6fd694b2-f61e-47fb-81b6-f5b279fb260c)
+![image](https://github.com/user-attachments/assets/35beea0e-8964-466d-8b10-052603eed298)
 
-<img src="![image](https://github.com/user-attachments/assets/f3dd1463-3da0-40b3-8bb8-83e608c2fc76)" alt="RetroVest Logo" width="200" />
 
 
 ## 🤝 Contribution
