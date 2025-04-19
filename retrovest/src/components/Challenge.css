@@ -1,11 +1,9 @@
-/* Dark theme base */
 body {
   background: #121212;
   color: #eee;
   font-family: Arial, sans-serif;
 }
 
-/* Overall layout for the Beat the Benchmark page */
 .advanced-benchmark {
   display: flex;
   flex-wrap: wrap;
@@ -14,36 +12,31 @@ body {
   padding: 30px;
 }
 
-/* Left panel (controls + stats) */
 .left-panel {
   flex: 1;
   min-width: 300px;
 }
 
-/* Right panel (chart + events) */
 .right-panel {
   flex: 1;
   min-width: 400px;
 
-  /* center its contents */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Center the "Recent Events" heading */
 .right-panel h2 {
   width: 90%;
   text-align: center;
   margin-top: 30px;
 }
 
-/* News / event log styling */
 .news-list {
   background: #1e1e1e;
   padding: 10px;
   border-radius: 4px;
-  margin: 10px auto 0;     /* auto left/right to center */
+  margin: 10px auto 0;     
   list-style: none;
   max-height: 200px;
   overflow-y: auto;
@@ -52,24 +45,21 @@ body {
 .news-list li {
   padding: 6px 0;
   border-bottom: 1px solid #333;
-  text-align: left;         /* keep items left-aligned */
+  text-align: left;         
 }
 .news-list li:last-child {
   border-bottom: none;
 }
 
-/* Headline */
 .left-panel h1 {
   margin-bottom: 20px;
 }
 
-/* Stats rows */
 .left-panel > div {
   margin-bottom: 10px;
   line-height: 1.5;
 }
 
-/* Controls group */
 .left-panel .controls {
   margin-top: 20px;
   display: flex;
@@ -78,7 +68,6 @@ body {
   max-width: 160px;
 }
 
-/* Input number styling */
 input[type="number"] {
   padding: 6px;
   background: #1e1e1e;
@@ -87,13 +76,11 @@ input[type="number"] {
   width: 80px;
 }
 
-/* Range slider styling */
 input[type="range"] {
   width: 100%;
   margin-top: 20px;
 }
 
-/* Button styling */
 button {
   padding: 8px 12px;
   background: #20b2ff;
@@ -108,7 +95,6 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Fade-in animation for containers */
 .container {
   max-width: 800px;
   margin: 0 auto;

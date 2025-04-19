@@ -5,7 +5,7 @@ import { FaLinkedin } from 'react-icons/fa';
 const team = [
   {
     name: 'Sai Shriyank DH',
-    image: '/images/dev1.jpg', // replace with real paths
+    image: '/images/dev1.jpg', 
     linkedin: 'https://www.linkedin.com/in/sai-shriyank-d-h-71269525a/'
   },
   {

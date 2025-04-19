@@ -7,7 +7,6 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* ─── Tabs (no sliding‐pill) ─── */
 .tabs {
   display: inline-flex;
   overflow: hidden;
@@ -35,7 +34,6 @@
   background: rgba(0,0,0,0.05);
 }
 
-/* ─── Controls ─── */
 .sip-controls {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
@@ -53,7 +51,6 @@
   font-weight: 600;
 }
 
-/* ─── Results & Chart ─── */
 .sip-results {
   display: flex;
   align-items: center;
@@ -80,7 +77,6 @@
   color: #e74c3c;
 }
 
-/* keep chart container sized correctly */
 .chart {
   width: 200px;
   height: 200px;
