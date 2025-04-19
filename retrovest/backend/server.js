@@ -176,7 +176,7 @@ const prices = lines.map(line => {
   return { date, basePrice: parseFloat(close) };
 });
 
-const STARTING_CASH = 50000;
+const STARTING_CASH = 25000;
 const MAX_LEVERAGE = 2.0;
 const MAINTENANCE_RATIO = 0.25;
 const FEE_RATE = 0.002;
