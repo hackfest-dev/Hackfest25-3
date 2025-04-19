@@ -1,65 +1,122 @@
-/* reuse your paper-trading dark theme */
+/* Dark theme base */
 body {
-    background: #121212;
-    color: #eee;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* container & animations */
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    animation: fadeInUp 0.5s ease-out;
-  }
-  
-  button {
-    padding: 8px 12px;
-    background: #20b2ff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  button:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Inputs */
-  input[type="number"] {
-    padding: 6px;
-    background: #1e1e1e;
-    border: 1px solid #333;
-    color: #fff;
-    width: 80px;
-    margin-right: 10px;
-  }
-  
-  /* Slider */
-  input[type="range"] {
-    width: 100%;
-    margin-top: 20px;
-  }
-  
-  /* News log */
-  .news-list {
-    background: #1e1e1e;
-    padding: 10px;
-    border-radius: 4px;
-    margin-top: 20px;
-    list-style: none;
-  }
-  .news-list li {
-    padding: 6px;
-    border-bottom: 1px solid #333;
-  }
-  .news-list li:last-child {
-    border-bottom: none;
-  }
-  
-  /* Keyframes */
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(10px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  
+  background: #121212;
+  color: #eee;
+  font-family: Arial, sans-serif;
+}
+
+/* Overall layout for the Beat the Benchmark page */
+.advanced-benchmark {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 30px;
+}
+
+/* Left panel (controls + stats) */
+.left-panel {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Right panel (chart + events) */
+.right-panel {
+  flex: 1;
+  min-width: 400px;
+
+  /* center its contents */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Center the "Recent Events" heading */
+.right-panel h2 {
+  width: 90%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* News / event log styling */
+.news-list {
+  background: #1e1e1e;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px auto 0;     /* auto left/right to center */
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 90%;
+}
+.news-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid #333;
+  text-align: left;         /* keep items left-aligned */
+}
+.news-list li:last-child {
+  border-bottom: none;
+}
+
+/* Headline */
+.left-panel h1 {
+  margin-bottom: 20px;
+}
+
+/* Stats rows */
+.left-panel > div {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Controls group */
+.left-panel .controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 160px;
+}
+
+/* Input number styling */
+input[type="number"] {
+  padding: 6px;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  color: #fff;
+  width: 80px;
+}
+
+/* Range slider styling */
+input[type="range"] {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Button styling */
+button {
+  padding: 8px 12px;
+  background: #20b2ff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  color: #000;
+  font-weight: bold;
+}
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Fade-in animation for containers */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
