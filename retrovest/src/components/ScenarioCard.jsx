@@ -5,11 +5,10 @@ import './ScenarioCard.css';
 const ScenarioCard = ({ scenario }) => {
   const navigate = useNavigate();
 
-  return (
+  return (  
     <div className="scenario-card">
-      <h2>{scenario.title}</h2>
-      <p className="years">{scenario.years}</p>
-      <p className="description">{scenario.description}</p>
+      <h2>Challenge {scenario.id}</h2>
+
       <button onClick={() => navigate(`/simulate/${scenario.id}`)}>
         Start Simulation
       </button>

@@ -1,7 +1,7 @@
-import React from 'react';
-import scenarios from '../data/scenarios';
-import ScenarioCard from '../components/ScenarioCard';
-import './ScenarioSelect.css'; // We'll make a matching container style
+import React from "react";
+import scenarios from "../data/scenarios";
+import ScenarioCard from "../components/ScenarioCard";
+import "./ScenarioSelect.css"; // We'll make a matching container style
 
 function ScenarioSelect() {
   return (

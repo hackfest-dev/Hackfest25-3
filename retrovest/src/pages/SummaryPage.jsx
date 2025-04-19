@@ -43,9 +43,9 @@ function SummaryPage() {
                   {decision.isCorrect ? '✅ Correct' : '❌ Wrong'}
                 </span>
               </div>
-              <p><strong>📌 Your Choice:</strong> {decision.userChoice}</p>
-              <p><strong>✅ Correct Choice:</strong> {decision.correctChoice}</p>
-              <p><strong>🧠 Explanation:</strong> {decision.explanation}</p>
+              <p><strong>Your Choice:</strong> {decision.userChoice}</p>
+              <p><strong>Correct Choice:</strong> {decision.correctChoice}</p>
+              <p><strong>Explanation:</strong> {decision.explanation}</p>
             </div>
           ))}
         </div>
