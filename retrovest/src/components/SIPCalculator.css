@@ -81,3 +81,127 @@
   width: 200px;
   height: 200px;
 }
+/* SIPCalculator.css */
+
+/* ─── Container & Font ─── */
+.sip-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  font-family: 'Courier New', Courier, monospace;
+  color: #eee;
+}
+
+/* ─── Tabs ─── */
+.tabs {
+  display: inline-flex;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  color: #ccc;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tabs button.active {
+  background: #20b2ff;
+  color: #000;
+}
+
+.tabs button:not(.active):hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ─── Controls ─── */
+.sip-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.control label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.control input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  background: #111;
+  color: #eee;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+.control .value {
+  margin-top: 0.5rem;
+  color: #20b2ff;
+  font-weight: 600;
+}
+
+/* ─── Results & Chart ─── */
+.sip-results {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.sip-results .numbers {
+  flex: 1 1 250px;
+}
+
+.sip-results .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.sip-results .row.total {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.sip-results hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 1rem 0;
+}
+
+.sip-results .row.difference strong {
+  color: #e74c3c;
+}
+
+/* ─── Chart Container ─── */
+.chart {
+  flex: 0 0 300px;
+  height: 300px;
+  background: #111;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+/* Make chart canvas fill its container */
+.chart canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.line-chart canvas {
+  background-color: white;      
+  border-radius: 6px;          
+}
