@@ -1,5 +1,4 @@
 .search-bar {
-<<<<<<< HEAD
   background-color: #1e1e2f;
   padding: 1.5rem;
   border-radius: 16px;
@@ -63,16 +62,8 @@
   from { opacity: 0; transform: translateY(5px); }
   to { opacity: 1; transform: translateY(0); }
 }
-=======
-    background-color: #1e1e2f;
-    padding: 1.5rem;
-    border-radius: 16px;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
-    color: #ecf0f1;
-    font-family: 'Courier New', Courier, monospace;
-    max-width: 900px;
-    margin: 2rem auto;
-  }
+    
+  
   
   .search-bar input[type="text"],
   .search-bar input[type="number"] {
@@ -128,4 +119,3 @@
     to { opacity: 1; transform: translateY(0); }
   }
   
->>>>>>> 3d51e1bed345e5398122591d5b1a4dbbb8511c9d
