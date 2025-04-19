@@ -1,8 +1,8 @@
-/* Dark theme base */
+
 body {
   background: #121212;
   color: #eee;
-  font-family: Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* Overall layout for the Beat the Benchmark page */
