@@ -14,7 +14,7 @@ export default function SearchBar({ onBuy }) {
     setQuery(q);
     if (!q) return setResults([]);
     try {
-      const res = await axios.get(`http://localhost:5001/api/search?q=${q}`);
+      const res = await axios.get(`http://localhost:5002/api/search?q=${q}`);
       setResults(res.data);
     } catch (err) {
       console.error('Search failed:', err);

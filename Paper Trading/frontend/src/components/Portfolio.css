@@ -1,0 +1,76 @@
+.portfolio {
+    background-color: #1e1e2f;
+    color: #ecf0f1;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+  
+  .portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.5rem;
+  }
+  
+  .portfolio-totals {
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+  }
+  
+  .portfolio-totals span {
+    background: #2c3e50;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+  
+  .portfolio-table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .portfolio-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .portfolio-table th,
+  .portfolio-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #444;
+  }
+  
+  .portfolio-table th {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+  }
+  
+  .portfolio-table tr:hover {
+    background-color: #2c2c3c;
+    transition: background-color 0.2s ease;
+  }
+  
+  .no-holdings {
+    font-style: italic;
+    color: #ccc;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .fade-item {
+    animation: fadeIn 0.4s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

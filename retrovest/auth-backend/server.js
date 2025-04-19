@@ -29,6 +29,6 @@ app.use(session({
 app.use('/api/auth', authRoutes);
 
 // ✅ Runs independently on port 5001
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5003;
 app.listen(PORT, () => console.log(`Auth server running on port ${PORT}`));
 

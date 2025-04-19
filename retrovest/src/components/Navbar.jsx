@@ -47,7 +47,8 @@ const Navbar = () => {
         <Link to="/">🌀 RetroVest</Link>
       </div>
       <ul className="nav-links">
-        
+      <li><Link to="http://localhost:3001/">Paper Trading</Link></li>
+
         <li><Link to="/Tmm">Time Machine Mode</Link></li>
         <li><Link to="/challenge">Challenge Mode</Link></li>
         <li><Link to="/market-analysis">Market Analysis</Link></li>
